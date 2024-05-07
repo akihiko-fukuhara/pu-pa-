@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+/* =============タブレット============== */
+@media (max-width:1000px) {
+  section {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  * {
+    margin: -2px;
+    padding: 0;
+}
+
+  /* header--------------------------- */
+  .logo {
+    width: 700px;
+  }
+
+  .logoimg {
+    width: 35%;
+  }
+
+  .tako {
+    width: 40%;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+  }
+
+  .tako h4 {
+    font-size: 13px;
+  }
+
+  .h1 {
+    padding-bottom: 10px;
+  }
+
+  .h2 {
+    padding-left: 50px;
+  }
+
+  /* メニューバー ------------------ */
+  nav ul {
+    width: 700px !important;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  nav ul a {
+    padding: 0 10px;
+  }
+
+
+  /* 写真-------------------------- */
+  .your-class {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  /* こだわり----------------------- */
+  .kodawari2 p {
+    font-size: 13px;
+  }
+
+  /* お品書き---------------------- */
+  .icon {
+    width: 31%;
+}
+
+  /* 出店日・出店場所---------------- */
+  .calall {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .cal {
+    display: none;
+  }
+
+  .tbcal {
+    display: block;
+  }
+
+  .calall h1{
+    display: none;
+  }
+
+  .calall h2{
+    display: block;
+  }
+/* 部活動支援 --------------*/
+.low-club1 p,.low-club2 p,.low-club3 p{
+  line-height: 26px;
+}
+
+.your-class{
+  width: 500px;
+}
+
+
+}
+
+/* =========スマホ=================== */
+@media (max-width:700px) {
+
+  /* header------------------------- */
+  #header {
+    display: none;
+  }
+
+  .logo {
+    width: 100vw;
+  }
+
+  .tako {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  section {
+    width: 90vw;
+  }
+
+  /* ハンバーガー----------- */
+
+  .menu {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    margin-top: 70px;
+    padding: 0 0 10px 0;
+    clear: both;
+    background: #ea9576;
+    opacity: .9;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+
+  /* Hamburger menu button */
+  .menu-btn:checked~.menu {
+    transform: scale(1, 1);
+    transform-origin: top;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  /* Hamburger menbu text */
+  .menu a {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: bisque;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .menu li {
+    border-top: 1px solid rgb(75, 75, 75);
+    padding: 3px 0;
+    margin: 0 54px;
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  .menu-btn:checked~.menu a,
+  .menu-btn:checked~.menu li {
+    opacity: 1;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 24px 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .navicon {
+    background: #ff2c0d;
+    display: block;
+    height: 3px;
+    width: 26px;
+    position: relative;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .navicon:before,
+  .navicon:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #ff2c0d;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .navicon:before {
+    top: 9px;
+  }
+
+  .navicon:after {
+    bottom: 9px;
+  }
+
+  /* Hamburger Menu Animation Start */
+  .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked~.menu-icon:not(.steps) .navicon:before {
+    top: 0;
+  }
+
+  .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    bottom: 0;
+  }
+
+  .menu-btn:checked~.menu-icon .navicon {
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  /* Hamburger Menu Animation End */
+
+  /* Navbar Container */
+  .navtext-container {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247 232 207);
+  }
+
+  /* Navbar Text */
+  .navtext {
+    position: absolute;
+    text-transform: uppercase;
+    color: bisque;
+    letter-spacing: 4px;
+    font-size: 27px;
+    font-family: 'Darumadrop One', cursive;
+    margin-left: 50px;
+  }
+
+  .hum {
+    display: block;
+
+  }
+
+  /* 写真------------ */
+  .your-class {
+    width: 127vw;
+    margin-left: -14vw;
+    margin-top: 14px;
+  }
+
+  /* こだわり---------- */
+  .kodaimg{
+    margin-left: 0;
+  }
+  .kodawari {
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+  }
+
+  .kodawari2 {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .kodaimg2 {
+    width: 60%;
+  }
+
+  /* お品書き----- */
+  .icon {
+    width: 50%;
+    margin: 0px;
+    padding: 3px;
+    box-shadow: none;
+  }
+
+  .oshinalogo {
+    margin-left: 0;
+  }
+
+  /* カレンダー----- */
+  .calall {
+    width: 90vw;
+  }
+
+  .tbcal {
+    width: 90vw;
+    aspect-ratio: 6/5;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  #syuttenn {
+    margin-left: 0;
+  }
+
+  /* フッター--------- */
+  .ft {
+    margin: 0;
+    padding: 0 10px 0 0;
+  }
+
+  .fi {
+    padding: 0 10px 0 0;
+    width: 40vw;
+  }
+
+  .fic {
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  .fic i {
+    font-size: 35px;
+    padding: 10px;
+  }
+
+  /* 下層ページ部活動支援 --------*/
+  .low-club1,.low-club2,.low-club3,.low-pr1,.low-pr2,.low-pr3{
+    font-size: 14px;
+  }
+  .low-club-img{
+    width: 30vw;
+    margin-left: -21px;
+  }
+  .low-pr-img{
+    width: 46vw;
+    margin-left: -22px;
+  }
+  .low-club2,.low-pr2{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .low-club3,.low-pr3{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .low-club2 p,.low-club3 p,.low-pr2 p,.low-pr3 p{
+    padding: 35px 0 0 0;
+  }
+  .low-club2 img,.low-club3 img,.low-pr2 img,.low-pr3 img{
+    width: 70vw;
+  }
+}
