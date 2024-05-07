@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+* {
+    font-family: serif;
+}
+*{
+    cursor: url(../img/cursor.png),auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+section{
+    width: 720px;
+    margin: 0 auto;
+    
+}
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../img/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: antiquewhite;
+
+}
+
+
+/* header------------------- */
+#header {
+    padding-top: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.logoimg {
+    width: 252px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tako {
+    
+    /* width: 800px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.h1 {
+    padding-right: 100px;
+    
+}
+
+.h2 {
+    padding-left: 100px;
+}
+.tb{
+    display: none;
+}
+
+/* メニューバー ------------ */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 800px;
+    /* margin-left: -27px; */
+    margin: 0 auto;
+
+    background-color: white;
+    background-image: url(../img/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: antiquewhite;
+
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+
+}
+/* ハンバーガー -------------------*/
+.hum{
+    display: none;
+}
+/* キャッチコピー-------------- */
+#logosp{
+    display: none;
+}
+
+/* 写真-------------------- */
+.your-class {
+    width: 720px;
+    margin: 0 auto;
+}
+.mainimg{
+    width: 100%;
+}
+.slick-next.slick-arrow::before{
+    color: #eeaa67;
+}
+.slick-prev.slick-arrow::before{
+    color: #eeaa67;
+}
+#slick-slide-control00::before{
+    color: #eeaa67;
+}
+#slick-slide-control01::before{
+    color: #eeaa67;
+}
+#slick-slide-control02::before{
+    color: #eeaa67;
+}
+
+
+/* こだわり----------------- */
+.kodaimg {
+    width: 18%;
+    margin-bottom: 20px;
+    margin-left: -25px;
+}
+
+.kodaimg2 {
+    width: 50%;
+
+}
+
+#kodawari {
+    margin-top: 150px;
+}
+
+.kodawari {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.kodawari2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 40px;
+    /* flex-wrap: wrap; */
+}
+
+.kodawari2 p {
+    margin-top: 0px;
+    font-size: 17px;
+}
+
+
+/* お品書き ----------------- */
+.oshinalogo {
+    width: 20%;
+    margin-bottom: 20px;
+    margin-left: -25px;
+}
+
+#oshinagaki {
+    margin-top: 150px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    flex: auto;
+    width: 29%;
+    margin: 10px;
+    /*box-shadow: 6px 7px 12px 4px #a38965;*/
+}
+
+.Topping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.topping{
+    width: 115%;
+    /*box-shadow: 6px 7px 12px 4px #a38965;*/
+}
+
+/* 出店日・出店場所----------- */
+.calall{
+    width: 720px;
+    margin: 0 auto;
+}
+#syuttenn {
+    width: 34%;
+    margin: 150px 0 20px -25px;
+}
+.tbcal{
+    display: none;
+}
+.calall h1,.calall h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.calall h2{
+    font-size: 17px;
+    display: none;
+}
+
+
+
+
+/* footer -------------------*/
+
+footer {
+    display: flex;
+    margin: 80px auto 0;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    z-index: 3;
+    background-image: url(../img/footer.jpg);
+}
+
+.fft {
+    /* padding-bottom: 25px; */
+    font-size: 7px;
+    color: #616161
+}
+
+.ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+
+.fi {
+    width: 300px;
+    padding-right: 90px;
+}
+
+.fic {
+    padding-left: 30px;
+}
+
+.cc {
+    flex-direction: column;
+    font-size: 50px;
+    padding-left: 20px;
+    color: #616161;
+}
+.footer-bg{
+    height: 176px;
+    width: 2000px;
+    margin: -176px auto 0;
+}
+
+/* 下層ページ　部活動紹介 ====================*/
+/* １ -----------------*/
+.low-club-img{
+    margin-top: 30px;
+    margin-left: -30px;
+}
+.low-club1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.low-club1 img{
+    width: 100%;
+    margin: 22px auto 42px;
+}
+.low-club1 p{
+    line-height: 40px;
+}
+/* 2,3 --------------------*/
+.low-club2,.low-club3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 160px auto;
+}
+.low-club2 img,.low-club3 img{
+    width: 43%;
+}
+.low-club2 p{
+    padding-left: 40px;
+    line-height: 45px;
+}
+.low-club2 a{
+    color: #ff4d00;
+}
+.low-club3 p{
+    padding-right: 40px;
+    line-height: 45px;
+}
+
+
+.low-club1 p::first-letter,.low-club2 p::first-letter,.low-club3 p::first-letter,.kodawari2 p::first-letter{
+        color: #eeaa67;
+        font-size: 58px;
+        font-weight: 900;
+        line-height: .5;
+        float: left;
+        font-family: 'Darumadrop One', cursive;
+    }
+
+/* 下層ページ　東広島名産物pr ================================-*/
+    /* １ -----------------*/
+.low-pr-img{
+    margin-top: 30px;
+    margin-left: -30px;
+}
+.low-pr1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.low-pr1 img{
+    width: 100%;
+    margin: 22px auto 42px;
+}
+.low-pr1 h4 a{
+    color: #ff4d00;
+}
+
+
+.low-pr1-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+.low-pr1-1 img{
+    width: 100%;
+    margin: 22px auto 42px;
+}
+/* 2,3 --------------------*/
+/*.low-pr2,.low-pr3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 160px auto;
+}
+.low-pr2 img,.low-pr3 img{
+    width: 43%;
+}
+.low-pr2 p{
+    padding-left: 40px;
+}
+.low-pr3 p{
+    padding-right: 40px;
+}*/
+
+.low-pr1 p::first-letter,.low-pr1-1 p::first-letter,.low-pr2 p::first-letter,.low-pr3 p::first-letter{
+        color: #eeaa67;
+        font-size: 58px;
+        font-weight: 900;
+        line-height: .5;
+        float: left;
+        font-family: 'Darumadrop One', cursive;
+    }
