@@ -183,12 +183,17 @@ nav ul {
     flex-wrap: wrap;
 }
 
+.icons_under1000{
+    display: none;
+}
+
 .icon {
     flex: auto;
     width: 29%;
     margin: 10px;
     /*box-shadow: 6px 7px 12px 4px #a38965;*/
 }
+
 
 .Topping {
     display: flex;

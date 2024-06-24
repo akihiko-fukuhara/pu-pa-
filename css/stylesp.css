@@ -67,6 +67,16 @@
     width: 31%;
 }
 
+.icons{
+  display: none;
+}
+
+.icons_under1000{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
   .Topping {
     margin-top: -25px;
   }
